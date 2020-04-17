@@ -6,8 +6,12 @@ class App < Sinatra::Base
   end
 
   post '/reverse' do
+<<<<<<< HEAD
     original_string = params["string"]
     @reversed_string = original_string.reverse 
+=======
+    puts params
+>>>>>>> 602218a15dcc9dd47baf8993e90bca6a4da3e344
     
     erb :reversed
   end
